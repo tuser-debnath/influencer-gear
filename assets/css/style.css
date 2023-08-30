@@ -1,0 +1,263 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;600;700;900&display=swap');
+
+/* Basic Css */
+body{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* Header Css */
+.header-container{
+    margin: 0 100px;
+    padding-top: 20px;
+}
+.nav-area{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 24px;
+    color: #3A3A3A;
+    margin-top: 0;
+}
+.nav-link{
+    display: flex;
+}
+
+.nav-link li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+.nav-link li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #3A3A3A;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Area Css */
+
+/* Banner Area Css */
+.banner-area{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    height: 500px;
+    margin: 0 100px;
+}
+.banner-text{
+    flex: 1;
+}
+.banner-header{
+    font-size: 52px;
+    color: #3A3A3A;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+.theme-btn{
+    cursor: pointer;
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #E02C6D;
+    border: none;
+}
+.theme-btn span{
+    margin-left: 5px;
+}
+.banner-image{
+    flex: 1;
+    text-align: right;
+    position: relative;
+    z-index: 1;
+}
+.banner-image img.circle{
+    position: absolute;
+    content: "";
+    right: 0;
+    backface-visibility: unset;
+    z-index: -1;
+}
+
+/* Client Area */
+.section-width{
+    margin: 0 150px;
+}
+.client-area{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Collection Area */
+.collection-area .logo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.all-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.single-collection{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.collection-img img{
+    width: 100%;
+}
+.collection-text .logo{
+    text-align: left;
+    margin-bottom: 5px;
+}
+.collection-text h3{
+    font-size: 15px;
+    margin: 5px 0;
+}
+.collection-text ul{
+    margin: 0;
+    padding: 0;
+}
+.collection-text ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+.collection-text ul li:last-child{
+    margin-left: 6px;
+    color: #3A3A3A;
+}
+.collection-text ul li{
+    color: gold;
+}
+.collection-text h4{
+    font-size: 14px;
+    color: #aaaaaa;
+}
+.collection-button{
+    text-align: right;
+}
+.collection-btn{
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    color: #E02C6D;
+    text-align: right;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/* Feature Area */
+.feature-area{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+.feature-text{
+    padding-left: 100px;
+}
+.feature-area .theme-btn{
+    border-radius: 2px;
+}
+
+/* Footer Area */
+.footer-area{
+    padding: 50px 0;
+    color: #fff;
+    background-color: #0A0826;
+    text-align: center;
+}
+.footer-area .logo{
+    color: #fff;
+    margin-bottom: 0;
+}
+.footer-area ul{
+    margin: 0;
+    padding: 0;
+}
+.footer-area ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer-area ul li a{
+    color: #fff;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 575px) {
+    .header-container{
+        margin: 0 20px;
+    }
+    .header-area{
+        background-color: #f5f5f5;
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 0;
+    }
+    .nav-area{
+        flex-direction: column;
+    }
+    .nav-link{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .nav-link li{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .banner-area{
+        flex-direction: column-reverse;
+        padding: 25px 0;
+        height: 250px;
+        margin: 0 20px;
+    }
+    .banner-header{
+        font-size: 28px;
+    }
+    .banner-text{
+        flex: 0;
+        text-align: center;
+    }
+    .banner-image{
+        display: none;
+    }
+    .banner-image img.circle{
+        display: none;
+    }
+    .section-width{
+        margin: 0 20px;
+    }
+    .client-area{
+        flex-direction: column;
+        gap: 30px;
+        padding: 60px 0;
+    }
+    .all-collection{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-area{
+        flex-direction: column;
+    }
+    .feature-text{
+        padding-left: 0;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+}
